@@ -4,7 +4,6 @@ import { Request, Response } from "express";
 import UserService from "../services/userService";
 import jwt from "jsonwebtoken";
 import { User } from "../models";
-
 export default class AuthController {
   static async login(req: Request, res: Response) {
     try {

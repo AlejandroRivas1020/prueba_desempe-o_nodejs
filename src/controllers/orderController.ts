@@ -2,8 +2,6 @@ import { Request, Response } from 'express';
 import { container } from 'tsyringe';
 import OrderService from '../services/orderService';
 import { Order } from '../models';
-
-
 export default class OrderController {
     static async getAllOrders(req: Request, res: Response) {
         try {
@@ -92,5 +90,4 @@ export default class OrderController {
                 message: err.message});
         }
     }
-
 }

@@ -2,7 +2,6 @@ import { Request, Response } from "express";
 import { container } from "tsyringe";
 import UserService from "../services/userService";
 import { User } from '../models';
-
 export default class UserController {
   static async getAllUsers(_: Request, res: Response) {
     try {

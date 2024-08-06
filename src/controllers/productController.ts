@@ -2,7 +2,6 @@ import { Request, Response } from 'express';
 import { container } from 'tsyringe';
 import ProductService from '../services/productService';
 import { Product } from '../models';
-
 export default class ProductController {
     static async getAllProducts(req: Request, res: Response) {
         try {
@@ -91,5 +90,4 @@ export default class ProductController {
                 message: err.message});
         }
     }
-
 }

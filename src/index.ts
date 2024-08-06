@@ -1,4 +1,3 @@
-// import "reflect-metadata";
 import express from "express";
 import sequelize from "./config/db";
 import router from "./routes/Router";
